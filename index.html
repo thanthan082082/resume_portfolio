@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Resume &amp; Portfolio AI | สตูดิโอสร้างเรซูเม่และพอร์ตโฟลิโอแยกหน้า</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <header class="topbar">
+    <a class="brand" href="#top"><span class="brand-icon">✦</span> Smart Studio <b>AI</b></a>
+    <nav class="main-nav">
+      <a href="#features">จุดเด่น</a>
+      <a href="#builder" id="navResumeBtn" class="nav-mode-link active">📄 หน้าสร้างเรซูเม่</a>
+      <a href="#builder" id="navPortfolioBtn" class="nav-mode-link">🎨 หน้าสร้างพอร์ตโฟลิโอ</a>
+    </nav>
+    <div class="topbar-actions">
+      <button type="button" class="btn btn-soft btn-sm" id="fillSampleTopBtn">✨ ลองข้อมูลตัวอย่าง</button>
+      <button type="button" class="btn btn-outline btn-sm" id="accountBtn">บัญชีผู้ใช้</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="dot"></span> DUAL STUDIO: RESUME &amp; PORTFOLIO AI</div>
+        <h1>แยกหน้าสร้างชัดเจน<br>ทั้ง <em>เรซูเม่</em> และ <em>พอร์ตโฟลิโอ</em></h1>
+        <p>สลับโหมดทำงานได้อิสระ! หน้าสร้างเรซูเม่ 6 เทมเพลตพร้อม AI ช่วยเขียนครบทุกหมวด และหน้าสร้างพอร์ตโฟลิโอโชว์ผลงานพร้อมรูปภาพพรีวิว สั่งพิมพ์แยกแผ่นหรือพิมพ์คู่เป็น PDF ขนาด A4 ได้ทันที</p>
+        <div class="hero-cta-group">
+          <button type="button" class="btn btn-primary" id="heroGoResumeBtn">📄 เริ่มสร้างเรซูเม่ <span>→</span></button>
+          <button type="button" class="btn btn-ai" id="heroGoPortfolioBtn">🎨 ไปหน้าสร้างพอร์ตโฟลิโอ <span>→</span></button>
+        </div>
+        <div class="hero-note">
+          <span>✓ แยกหน้าทำเรซูเม่ &amp; พอร์ตโฟลิโอ</span>
+          <span>✓ ซิงค์ชื่อและโทนสีอัตโนมัติ</span>
+          <span>✓ พิมพ์ PDF แยกแผ่นหรือรวมเล่มได้</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="ตัวอย่างเรซูเม่และพอร์ตโฟลิโอ">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="floating-card"><span>✦</span> โหมดคู่: Resume + Portfolio</div>
+        <div class="floating-card-bottom">★ AI Studio Score: 100/100</div>
+        <div class="resume-mock">
+          <div class="mock-head"><div class="avatar">สม</div><div><b>สมชาย ใจดี</b><small>FRONTEND DEVELOPER</small></div></div>
+          <div class="mock-line long"></div><div class="mock-line"></div>
+          <div class="mock-title">PAGE 1: SMART RESUME</div><div class="mock-line long"></div><div class="mock-line mid"></div>
+          <div class="mock-title">PAGE 2: PORTFOLIO GALLERY</div><div class="mock-line long"></div>
+          <div class="mock-title">RECOMMENDED SKILLS</div><div class="chips"><i>HTML5</i><i>CSS3</i><i>JavaScript</i><i>React</i><i>UI/UX</i></div>
+        </div>
+        <div class="sparkle">✧</div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="section-heading">
+        <span>2 สตูดิโอในเว็บเดียว</span>
+        <h2>แยกหน้าจัดการเรซูเม่และพอร์ตโฟลิโออย่างเป็นระบบ</h2>
+        <p>ออกแบบมาให้หน้าทำงานไม่รกตา เลือกทำทีละส่วนและดูตัวอย่างกระดาษ A4 แยกแต่ละหน้าได้ชัดเจน</p>
+      </div>
+      <div class="feature-grid">
+        <article><div class="feature-icon purple">📄</div><h3>หน้าสร้างเรซูเม่ (Resume)</h3><p>กรอกประวัติส่วนตัว การศึกษา ประสบการณ์ และทักษะ พร้อม AI ช่วยเขียนและรูปโปรไฟล์ขนาดใหญ่ 6 เทมเพลต</p></article>
+        <article><div class="feature-icon amber">🎨</div><h3>หน้าสร้างพอร์ตโฟลิโอ (Portfolio)</h3><p>หน้าเฉพาะสำหรับจัดทำแกลเลอรีผลงาน อัปโหลดภาพหน้าปก ใส่รายละเอียด ลิงก์ผลงาน และเลือกเลย์เอาต์การ์ดได้</p></article>
+        <article><div class="feature-icon blue">✦</div><h3>AI ช่วยร่างทั้ง 2 หน้า</h3><p>มี AI ช่วยเขียนแนะนำตัวและประสบการณ์ในหน้าเรซูเม่ และมี AI ช่วยสร้างการ์ดผลงานตัวอย่างในหน้าพอร์ตโฟลิโอ</p></article>
+        <article><div class="feature-icon green">⇩</div><h3>พิมพ์ PDF แยกหรือคู่ได้</h3><p>เลือกพิมพ์เฉพาะหน้าเรซูเม่ พิมพ์เฉพาะหน้าพอร์ตโฟลิโอ หรือสั่งพิมพ์ทั้ง 2 หน้าต่อเนื่องกันในคลิกเดียว</p></article>
+      </div>
+    </section>
+
+    <section class="builder-section" id="builder">
+      <div class="section-heading">
+        <span>เลือกหน้าที่ต้องการจัดทำ</span>
+        <h2>สตูดิโอสร้างเรซูเม่ &amp; พอร์ตโฟลิโอ</h2>
+        <p>คลิกสลับแถบเมนูด้านล่างเพื่อเลือกทำ <b>หน้าเรซูเม่</b> หรือ <b>หน้าพอร์ตโฟลิโอ</b></p>
+      </div>
+
+      <!-- ปุ่มสลับหน้าใหญ่ (Page Mode Switcher) -->
+      <div class="studio-mode-switcher" role="tablist" aria-label="สลับโหมดการทำงาน">
+        <button type="button" class="mode-tab-btn active" id="tabResumeMode" data-mode="resume" role="tab" aria-selected="true">
+          <span class="mode-icon">📄</span>
+          <div class="mode-text">
+            <strong>1. หน้าสร้างเรซูเม่ (Resume Builder)</strong>
+            <small>ประวัติส่วนตัว การศึกษา ประสบการณ์ และทักษะ</small>
+          </div>
+        </button>
+        <button type="button" class="mode-tab-btn" id="tabPortfolioMode" data-mode="portfolio" role="tab" aria-selected="false">
+          <span class="mode-icon">🎨</span>
+          <div class="mode-text">
+            <strong>2. หน้าสร้างพอร์ตโฟลิโอ (Portfolio Builder)</strong>
+            <small>แกลเลอรีโชว์ผลงาน รูปภาพพรีวิว และลิงก์โปรเจกต์</small>
+          </div>
+          <span class="mode-count-badge" id="portfolioCountBadge">0 ผลงาน</span>
+        </button>
+      </div>
+
+      <div class="workspace">
+        <form id="resumeForm" class="form-panel">
+
+          <!-- ==========================================
+               หน้าที่ 1: ฟอร์มสร้างเรซูเม่ (RESUME VIEW)
+               ========================================== -->
+          <div id="resumeFormView">
+            <div class="form-title">
+              <div>
+                <span class="step-label">โหมดที่ 1 · RESUME STUDIO</span>
+                <h3>รายละเอียดเรซูเม่</h3>
+              </div>
+              <div class="form-header-Right">
+                <button type="button" class="btn btn-ai btn-sm" id="aiAutoPolishBtn">✦ AI เติมเรซูเม่อัตโนมัติ</button>
+                <button type="button" class="btn btn-soft btn-sm" id="sampleBtn">✨ กรอกข้อมูลตัวอย่าง</button>
+              </div>
+            </div>
+
+            <!-- AI Resume Score -->
+            <div class="ai-score-card" id="aiScoreCard">
+              <div class="ai-score-top">
+                <div class="ai-score-title"><span>✦</span> AI วิเคราะห์ความสมบูรณ์ของเรซูเม่ (Resume Score)</div>
+                <span class="ai-score-badge" id="aiScoreValue">0%</span>
+              </div>
+              <div class="ai-progress-track">
+                <div class="ai-progress-bar" id="aiScoreBar"></div>
+              </div>
+              <p class="ai-score-tip" id="aiScoreTip">💡 คำแนะนำ AI: เริ่มต้นด้วยการกรอกชื่อ ตำแหน่งงาน และอัปโหลดรูปโปรไฟล์เพื่อให้เรซูเม่ดูน่าเชื่อถือ</p>
+            </div>
+
+            <!-- รูปโปรไฟล์ขนาดใหญ่ -->
+            <div class="photo-upload-card">
+              <div class="photo-preview-box" id="formPhotoPreview">
+                <span id="formPhotoInitials">รูป</span>
+              </div>
+              <div class="photo-controls">
+                <h4>รูปถ่ายโปรไฟล์ (ใช้แสดงทั้งหน้าเรซูเม่และพอร์ตโฟลิโอ)</h4>
+                <p>รองรับไฟล์ JPG, PNG, WEBP ความละเอียดสูง ปรับขนาดและกรอบรูปได้ตามต้องการ</p>
+                <div class="photo-btn-row">
+                  <input type="file" id="photoInput" accept="image/*" hidden>
+                  <button type="button" class="btn btn-soft btn-sm" id="uploadPhotoBtn">📷 เลือกรูปภาพ</button>
+                  <button type="button" class="btn btn-danger-soft btn-sm" id="removePhotoBtn" hidden>ลบรูป</button>
+                  <select id="photoShape" class="photo-shape-select" aria-label="รูปทรงกรอบรูป">
+                    <option value="circle">กรอบวงกลม</option>
+                    <option value="rounded">กรอบสี่เหลี่ยมมุมมน</option>
+                    <option value="portrait">กรอบรูปติดบัตรแนวตั้ง (3:4)</option>
+                    <option value="hidden">ไม่แสดงรูป</option>
+                  </select>
+                  <select id="photoSize" class="photo-shape-select" aria-label="ขนาดรูปโปรไฟล์">
+                    <option value="95px">ขนาดปกติ (M)</option>
+                    <option value="125px" selected>ขนาดใหญ่ (L - แนะนำ)</option>
+                    <option value="150px">ขนาดใหญ่พิเศษ (XL)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- หมวด 1: ข้อมูลส่วนตัว -->
+            <div class="group-badge">1. ข้อมูลส่วนตัวและช่องทางติดต่อ</div>
+            <div class="two-col">
+              <label>ชื่อ-นามสกุล <b>*</b><input id="name" required placeholder="เช่น สมชาย ใจดี"></label>
+              <label>ตำแหน่งที่ต้องการสมัคร <b>*</b><input id="job" required placeholder="เช่น Frontend Developer"></label>
+            </div>
+            <div class="two-col">
+              <label>อีเมล <b>*</b><input id="email" type="email" required placeholder="you@example.com"></label>
+              <label>เบอร์โทรศัพท์<input id="phone" type="tel" placeholder="08X-XXX-XXXX"></label>
+            </div>
+            <div class="three-col">
+              <label>จังหวัด / ที่อยู่<input id="location" placeholder="เช่น เมือง, จังหวัดเลย"></label>
+              <label>วันเกิด / อายุ<input id="birth" placeholder="เช่น อายุ 22 ปี"></label>
+              <label>รูปแบบงาน / เงินเดือนที่คาดหวัง<input id="salary" placeholder="เช่น Full-time / ตามตกลง"></label>
+            </div>
+            <label>ลิงก์ผลงาน / โซเชียลมีเดีย (Portfolio, GitHub, LinkedIn)<input id="portfolio" placeholder="เช่น github.com/somchai หรือ linkedin.com/in/somchai"></label>
+
+            <!-- หมวด 2: แนะนำตัว -->
+            <div class="form-group-box">
+              <div class="group-header-row">
+                <div class="group-badge">2. แนะนำตัวและจุดเด่น (Profile Summary)</div>
+              </div>
+              <label>แนะนำตัวเอง / เป้าหมายในการทำงาน<textarea id="profile" rows="4" placeholder="เล่าจุดเด่น ความสนใจ และเป้าหมายในการทำงาน"></textarea></label>
+              <div class="assist-box">
+                <div class="assist-heading">
+                  <span class="ai-badge">✦ SMART AI WRITER</span>
+                  <span class="offline">AI อัจฉริยะในตัว · ใช้งานฟรี</span>
+                </div>
+                <p>เลือกโทนภาษาแล้วกดปุ่ม เพื่อให้ AI วิเคราะห์ตำแหน่งงานและทักษะของคุณแล้วเรียบเรียงคำโปรยมืออาชีพ</p>
+                <div class="assist-controls">
+                  <select id="assistTone" aria-label="โทนภาษาแนะนำตัว">
+                    <option value="professional">โทนสุภาพเป็นทางการ (Professional)</option>
+                    <option value="modern">โทนทันสมัย มั่นใจ (Modern Impact)</option>
+                    <option value="freshgrad">โทนจบใหม่ ไฟแรง (Fresh Graduate)</option>
+                    <option value="english">ภาษาอังกฤษ (English Profile)</option>
+                  </select>
+                  <button type="button" class="btn btn-ai btn-sm" id="suggestBtn">✦ ช่วยแนะนำข้อความ</button>
+                  <button type="button" class="btn btn-outline btn-sm" id="shuffleSuggestBtn">↻ เปลี่ยนสำนวน</button>
+                </div>
+                <div id="suggestion" class="suggestion" hidden></div>
+              </div>
+            </div>
+
+            <!-- หมวด 3: การศึกษาและประสบการณ์ -->
+            <div class="form-group-box">
+              <div class="group-header-row">
+                <div class="group-badge">3. ประวัติการศึกษา ประสบการณ์ และโครงงานย่อ</div>
+                <div class="assist-controls">
+                  <button type="button" class="btn btn-ai btn-xs" id="aiExpBtn">✦ AI ช่วยร่างประสบการณ์</button>
+                  <button type="button" class="btn btn-ai btn-xs" id="aiProjBtn">✦ AI ช่วยร่างโครงงาน</button>
+                </div>
+              </div>
+              <label>ประวัติการศึกษา<textarea id="education" rows="3" placeholder="เช่น ปริญญาตรี วิทยาศาสตรบัณฑิต (วิทยาการคอมพิวเตอร์) มหาวิทยาลัยราชภัฏเลย (2565 - 2569) เกรดเฉลี่ย 3.58"></textarea></label>
+              <label>ประสบการณ์ทำงาน / ฝึกงาน / กิจกรรม<textarea id="experience" rows="4" placeholder="ระบุตำแหน่ง สถานที่ ช่วงเวลา และหน้าที่ที่รับผิดชอบ"></textarea></label>
+              <label>โครงงาน / ผลงานโดยย่อในเรซูเม่<textarea id="projects" rows="3" placeholder="ระบุสรุปโครงงานสั้นๆ (ส่วนผลงานแบบละเอียดพร้อมรูปภาพ สามารถไปเพิ่มใน 'หน้าสร้างพอร์ตโฟลิโอ' ได้)"></textarea></label>
+            </div>
+
+            <!-- หมวด 4: ทักษะ ภาษา และบุคคลอ้างอิง -->
+            <div class="form-group-box">
+              <div class="group-header-row">
+                <div class="group-badge">4. ทักษะ ภาษา และข้อมูลเพิ่มเติม</div>
+                <button type="button" class="btn btn-ai btn-xs" id="aiSkillBtn">✦ AI แนะนำทักษะตามตำแหน่งงาน</button>
+              </div>
+              <label>ทักษะความสามารถ (คั่นด้วยเครื่องหมายจุลภาค , เพื่อแสดงเป็นป้ายแท็ก)<textarea id="skills" rows="2" placeholder="เช่น HTML, CSS, JavaScript, Canva, Microsoft Office, การทำงานเป็นทีม"></textarea></label>
+
+              <div class="ai-skill-drawer" id="aiSkillDrawer" hidden>
+                <div class="ai-skill-drawer-title">
+                  <span>✦ คลิกที่ป้ายด้านล่างเพื่อเพิ่มทักษะที่ AI แนะนำลงในเรซูเม่:</span>
+                  <button type="button" class="btn btn-outline btn-xs" id="addAllAiSkillsBtn">+ เพิ่มทั้งหมด</button>
+                </div>
+                <div class="ai-skill-chips" id="aiSkillChips"></div>
+              </div>
+
+              <label class="inline-check">
+                <input type="checkbox" id="skillTagsToggle" checked>
+                แสดงทักษะเป็นป้ายแท็ก (Skill Chips) ในเรซูเม่
+              </label>
+              <div class="two-col">
+                <label>ทักษะด้านภาษา (Languages)<textarea id="languages" rows="2" placeholder="เช่น ภาษาไทย (ดีมาก), ภาษาอังกฤษ (สื่อสารและอ่านเอกสารเทคนิคได้)"></textarea></label>
+                <label>ใบรับรอง / การอบรม (Certifications)<textarea id="certifications" rows="2" placeholder="เช่น อบรมการพัฒนาเว็บไซต์เบื้องต้น, IC3 Digital Literacy"></textarea></label>
+              </div>
+              <label>บุคคลอ้างอิง (References)<input id="references" placeholder="เช่น อ.ดร.สมหมาย ใจดี (อาจารย์ที่ปรึกษา) โทร 08X-XXX-XXXX หรือเว้นว่างไว้"></label>
+            </div>
+
+            <div class="switch-page-banner">
+              <div>
+                <strong>ต้องการสร้างหน้าแฟ้มสะสมผลงาน (Portfolio) แยกอีกแผ่นใช่ไหม?</strong>
+                <p>คลิกปุ่มด้านขวาเพื่อสลับไปหน้าจัดทำแกลเลอรีผลงานพร้อมรูปภาพพรีวิว</p>
+              </div>
+              <button type="button" class="btn btn-ai btn-sm" id="goToPortfolioFormBtn">ไปหน้าสร้างพอร์ตโฟลิโอ →</button>
+            </div>
+          </div>
+
+          <!-- ==========================================
+               หน้าที่ 2: ฟอร์มสร้างพอร์ตโฟลิโอ (PORTFOLIO VIEW)
+               ========================================== -->
+          <div id="portfolioFormView" hidden>
+            <div class="form-title">
+              <div>
+                <span class="step-label">โหมดที่ 2 · PORTFOLIO STUDIO</span>
+                <h3>จัดทำหน้าแฟ้มสะสมผลงาน (Portfolio)</h3>
+              </div>
+              <div class="form-header-Right">
+                <button type="button" class="btn btn-ai btn-sm" id="aiPortfolioBtn">✦ AI สร้างพอร์ตโฟลิโอตัวอย่าง</button>
+                <button type="button" class="btn btn-primary btn-sm" id="addPortfolioBtn">+ เพิ่มการ์ดผลงานใหม่</button>
+              </div>
+            </div>
+
+            <div class="portfolio-studio-intro">
+              <div class="portfolio-sync-note">
+                <span>🔗 ซิงค์ข้อมูลผู้สมัครจากหน้าเรซูเม่อัตโนมัติ:</span>
+                <b id="portSyncNameLabel">สมชาย ใจดี (Frontend Developer)</b>
+                <button type="button" class="btn btn-outline btn-xs" id="backToResumeEditBtn">✎ แก้ไขข้อมูลส่วนตัว</button>
+              </div>
+              <div class="two-col" style="margin-top: 10px;">
+                <label>หัวข้อหน้าพอร์ตโฟลิโอ (Portfolio Title)
+                  <input id="portfolioPageTitle" value="PORTFOLIO &amp; SELECTED WORKS" placeholder="เช่น PORTFOLIO &amp; SELECTED WORKS">
+                </label>
+                <label>รูปแบบการจัดวางการ์ด (Gallery Layout)
+                  <select id="portfolioGridCols">
+                    <option value="2" selected>แบบ 2 คอลัมน์ (การ์ดมาตรฐาน - แนะนำ)</option>
+                    <option value="1">แบบ 1 คอลัมน์ (การ์ดแนวกว้าง รายละเอียดชัด)</option>
+                  </select>
+                </label>
+              </div>
+              <label>คำโปรยแนะนำพอร์ตโฟลิโอ (Portfolio Intro / Tagline)
+                <input id="portfolioIntro" placeholder="เช่น รวบรวมผลงานการออกแบบ พัฒนาเว็บไซต์ และโปรเจกต์สำคัญที่ผ่านการลงมือปฏิบัติจริง">
+              </label>
+            </div>
+
+            <div class="group-header-row" style="margin: 16px 0 10px;">
+              <div class="group-badge">รายการการ์ดผลงานในพอร์ตโฟลิโอ</div>
+              <small style="color: var(--muted); font-size: 11.5px;">รองรับการอัปโหลดรูปภาพหน้าปกทุกชิ้นงาน</small>
+            </div>
+
+            <div id="portfolioInputsContainer" class="portfolio-inputs-list"></div>
+
+            <div class="switch-page-banner" style="margin-top: 20px;">
+              <div>
+                <strong>กลับไปแก้ไขข้อมูลเรซูเม่หน้าแรก?</strong>
+                <p>ข้อมูลพอร์ตโฟลิโอทั้งหมดถูกซิงค์ไว้เรียบร้อยแล้ว สามารถสลับกลับได้ทันที</p>
+              </div>
+              <button type="button" class="btn btn-soft btn-sm" id="backToResumeFormBtn">← กลับหน้าสร้างเรซูเม่</button>
+            </div>
+          </div>
+
+          <!-- ปุ่มควบคุมการบันทึกไฟล์ (ใช้ร่วมกันทั้ง 2 หน้า) -->
+          <div class="form-actions">
+            <div class="form-actions-left">
+              <button type="reset" class="btn btn-outline btn-sm">ล้างข้อมูลทั้งหมด</button>
+              <button type="button" class="btn btn-outline btn-sm" id="exportJsonBtn">ส่งออกไฟล์ .json</button>
+              <input type="file" id="importJsonInput" accept=".json,application/json" hidden>
+              <button type="button" class="btn btn-outline btn-sm" id="importJsonBtn">นำเข้าไฟล์ .json</button>
+            </div>
+            <div class="form-actions-right">
+              <button type="button" class="btn btn-primary" id="saveBtn">💾 บันทึกในเครื่อง</button>
+            </div>
+          </div>
+        </form>
+
+        <!-- ==========================================
+             แผงพรีวิวด้านขวา (สลับหน้าตามโหมดที่เลือก)
+             ========================================== -->
+        <aside class="preview-panel">
+          <div class="preview-top">
+            <div>
+              <span class="step-label" id="previewStepLabel">กำลังแสดง: หน้าเรซูเม่ (แผ่นที่ 1)</span>
+              <h3 id="previewHeadingTitle">Resume Preview</h3>
+            </div>
+            <div class="preview-page-pills">
+              <button type="button" class="page-pill active" id="previewSwitchResumeBtn">📄 หน้าเรซูเม่</button>
+              <button type="button" class="page-pill" id="previewSwitchPortfolioBtn">🎨 หน้าพอร์ตโฟลิโอ</button>
+            </div>
+          </div>
+
+          <!-- ปุ่มสลับเทมเพลต 6 สไตล์ -->
+          <div class="template-Tabs" id="templateTabs" aria-label="เลือกสไตล์เทมเพลต">
+            <button type="button" class="tpl-card-btn active" data-tpl="classic">1. Classic</button>
+            <button type="button" class="tpl-card-btn" data-tpl="banner">2. Modern Banner</button>
+            <button type="button" class="tpl-card-btn" data-tpl="split">3. Two-Column</button>
+            <button type="button" class="tpl-card-btn" data-tpl="sidebar">4. Exec Sidebar</button>
+            <button type="button" class="tpl-card-btn" data-tpl="minimal">5. Minimal Center</button>
+            <button type="button" class="tpl-card-btn" data-tpl="creative">6. Creative Card</button>
+          </div>
+
+          <!-- แถบปรับแต่งสไตล์และโทนสี -->
+          <div class="preview-toolbar">
+            <div class="toolbar-group">
+              <span>เทมเพลต:</span>
+              <select id="templateSelect" aria-label="เลือกเทมเพลต">
+                <option value="classic">1. คลาสสิก (Classic Clean)</option>
+                <option value="banner">2. แถบหัวกระดาษ (Modern Banner)</option>
+                <option value="split">3. 2 คอลัมน์ (Two-Column Split)</option>
+                <option value="sidebar">4. แถบข้างผู้บริหาร (Executive Sidebar)</option>
+                <option value="minimal">5. มินิมอลกึ่งกลาง (Minimalist Center)</option>
+                <option value="creative">6. การ์ดครีเอทีฟ (Creative Card)</option>
+              </select>
+            </div>
+            <div class="toolbar-group">
+              <span>โทนสี:</span>
+              <div class="color-dots" id="colorPicker">
+                <button type="button" class="color-dot active" data-color="#6c52e8" data-soft="#f0edff" style="background:#6c52e8" title="สีม่วง Royal Purple" aria-label="สีม่วง"></button>
+                <button type="button" class="color-dot" data-color="#2563eb" data-soft="#e8f0fe" style="background:#2563eb" title="สีน้ำเงิน Navy Blue" aria-label="สีน้ำเงิน"></button>
+                <button type="button" class="color-dot" data-color="#0d9488" data-soft="#e6f7f5" style="background:#0d9488" title="สีเขียวหัวเป็ด Emerald" aria-label="สีเขียว"></button>
+                <button type="button" class="color-dot" data-color="#334155" data-soft="#f1f5f9" style="background:#334155" title="สีเทาเข้ม Slate" aria-label="สีเทาเข้ม"></button>
+                <button type="button" class="color-dot" data-color="#be123c" data-soft="#ffe4e6" style="background:#be123c" title="สีแดงเข้ม Crimson" aria-label="สีแดงเข้ม"></button>
+                <button type="button" class="color-dot" data-color="#b45309" data-soft="#fef3c7" style="background:#b45309" title="สีทองอำพัน Amber Gold" aria-label="สีทองอำพัน"></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- กระดาษแผ่นที่ 1: เรซูเม่ (Resume Paper) -->
+          <article class="resume-paper" id="resumePaper">
+            <div class="paper-header">
+              <div class="paper-photo" id="pPhotoBox">
+                <span id="pPhotoInitials">สจ</span>
+              </div>
+              <div class="paper-header-text">
+                <h1 id="pName">ชื่อ-นามสกุล</h1>
+                <div class="paper-job" id="pJob">ตำแหน่งที่ต้องการสมัคร</div>
+                <p class="paper-meta" id="pContact">อีเมล · เบอร์โทรศัพท์ · ที่อยู่</p>
+                <p class="paper-submeta" id="pExtraMeta" hidden></p>
+              </div>
+            </div>
+
+            <div class="paper-body">
+              <div class="paper-col-main">
+                <section class="paper-section" id="secProfile">
+                  <h4>PROFILE</h4>
+                  <p id="pProfile">เพิ่มข้อความแนะนำตัวเพื่อแสดงจุดเด่นของคุณ</p>
+                </section>
+                <section class="paper-section" id="secExperience">
+                  <h4>EXPERIENCE</h4>
+                  <p id="pExperience">ประสบการณ์ทำงาน ฝึกงาน หรือกิจกรรม</p>
+                </section>
+                <section class="paper-section" id="secProjects" hidden>
+                  <h4>PROJECTS &amp; ACHIEVEMENTS</h4>
+                  <p id="pProjects"></p>
+                </section>
+              </div>
+
+              <div class="paper-col-side">
+                <section class="paper-section" id="secEducation">
+                  <h4>EDUCATION</h4>
+                  <p id="pEducation">ประวัติการศึกษาของคุณ</p>
+                </section>
+                <section class="paper-section" id="secSkills">
+                  <h4>SKILLS</h4>
+                  <div id="pSkillsContainer">
+                    <p id="pSkills">ทักษะความสามารถ</p>
+                  </div>
+                </section>
+                <section class="paper-section" id="secLanguages" hidden>
+                  <h4>LANGUAGES</h4>
+                  <p id="pLanguages"></p>
+                </section>
+                <section class="paper-section" id="secCertifications" hidden>
+                  <h4>CERTIFICATIONS</h4>
+                  <p id="pCertifications"></p>
+                </section>
+                <section class="paper-section" id="secReferences" hidden>
+                  <h4>REFERENCES</h4>
+                  <p id="pReferences"></p>
+                </section>
+              </div>
+            </div>
+          </article>
+
+          <!-- กระดาษแผ่นที่ 2: พอร์ตโฟลิโอแยกหน้า (Portfolio Paper) -->
+          <article class="resume-paper portfolio-paper" id="portfolioPaper" hidden>
+            <div class="paper-header">
+              <div class="paper-photo" id="portPhotoBox">
+                <span id="portPhotoInitials">สจ</span>
+              </div>
+              <div class="paper-header-text">
+                <div class="portfolio-sheet-kicker" id="pPortfolioHeading">PORTFOLIO &amp; SELECTED WORKS</div>
+                <h1 id="portName">ชื่อ-นามสกุล</h1>
+                <div class="paper-job" id="portJob">ตำแหน่งที่ต้องการสมัคร</div>
+                <p class="paper-meta" id="portContact">อีเมล · เบอร์โทรศัพท์ · ลิงก์ผลงาน</p>
+              </div>
+            </div>
+
+            <div class="portfolio-sheet-body">
+              <p class="portfolio-sheet-intro" id="pPortfolioIntro">รวบรวมผลงานและโปรเจกต์สำคัญที่ผ่านการออกแบบและพัฒนาอย่างเป็นระบบ</p>
+              <div class="portfolio-grid" id="pPortfolioGrid"></div>
+            </div>
+          </article>
+
+          <div class="preview-actions-stack">
+            <button type="button" class="btn btn-primary download-btn" id="downloadCurrentBtn">↓ พิมพ์ / ดาวน์โหลดหน้านี้เป็น PDF</button>
+            <button type="button" class="btn btn-soft download-btn" id="downloadBothBtn">📑 พิมพ์ทั้งเรซูเม่ + พอร์ตโฟลิโอ (ครบ 2 หน้า)</button>
+          </div>
+          <p class="privacy-note">ข้อมูลและรูปภาพถูกจัดเก็บไว้ในเบราว์เซอร์ของเครื่องนี้เท่านั้น (LocalStorage)</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#top"><span class="brand-icon">✦</span> Smart Studio <b>AI</b></a>
+    <p>สตูดิโอจัดทำเรซูเม่และพอร์ตโฟลิโอแยกหน้า พร้อมรูปถ่ายขนาดใหญ่ 6 เทมเพลต และผู้ช่วย AI อัจฉริยะ</p>
+    <small>เวอร์ชันใช้งานฟรี · ข้อมูลประมวลผลในเบราว์เซอร์ของคุณอย่างปลอดภัย</small>
+  </footer>
+
+  <dialog id="accountDialog">
+    <form method="dialog" class="dialog-card">
+      <button type="button" class="close" id="closeDialogBtn" aria-label="ปิด">×</button>
+      <span class="ai-badge">โหมดใช้งานในเครื่อง</span>
+      <h2>จัดการข้อมูลเรซูเม่และพอร์ตโฟลิโอ</h2>
+      <p>เวอร์ชันนี้บันทึกข้อมูลทั้งหน้าเรซูเม่และหน้าพอร์ตโฟลิโอไว้ในเบราว์เซอร์เครื่องนี้อัตโนมัติ และคุณสามารถกด <b>ส่งออกไฟล์ .json</b> เพื่อเก็บสำรองไว้เปิดในเครื่องอื่นได้ทันที</p>
+      <button type="submit" class="btn btn-primary">เข้าใจแล้ว</button>
+    </form>
+  </dialog>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
